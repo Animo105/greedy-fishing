@@ -83,6 +83,8 @@ func _on_select_pressed() -> void:
 	if !LevelManager.level_list[Globals.current_habitat].is_unlocked: return
 	MainMusic.tune_music_down(-25, 2)
 	SfxManager.play("enterarea", -2)
+	stage_tween = create_tween()
+	stage_tween.tween_property(stages[Globals.current_habitat], "scale", Vector2(10.0, 10.0), 1.0)
 	TransitionScreen.call_between_fade(SceneManager.load_from_file.bind("res://Shop/shop.tscn"))
 
 func _on_unlock_button_pressed() -> void:
