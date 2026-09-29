@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://yr10tha2h6le"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_r4wbd"]
+[ext_resource type="Texture2D" uid="uid://dkcp3diybc41u" path="res://Assets/gearsAssets/Lines/rope_line.png" id="2_00gat"]
+
+[resource]
+script = ExtResource("1_r4wbd")
+type = 2
+price = 500
+texture = ExtResource("2_00gat")
+level = 1
+strenght = 0.3
+speed = -1.0
+snap = 1.0
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

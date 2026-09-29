@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FishResource" format=3 uid="uid://pnu58eom84qc"]
+
+[ext_resource type="Texture2D" uid="uid://blxivccevuu5w" path="res://Assets/fish/Swamp/full_cube_fish_hidden.png" id="1_2uqjh"]
+[ext_resource type="Script" uid="uid://bb6mc2xy1t4uq" path="res://Fish/fish.gd" id="2_mixwj"]
+[ext_resource type="Texture2D" uid="uid://dixrk3ge4wxjn" path="res://Assets/fish/Swamp/full_cube_fish.png" id="3_wxkwq"]
+
+[resource]
+script = ExtResource("2_mixwj")
+texture = ExtResource("3_wxkwq")
+hidden_texture = ExtResource("1_2uqjh")
+direction_change_frequency = 0.05
+base_value = 50.0
+habitat = 3
+metadata/_custom_type_script = "uid://bb6mc2xy1t4uq"

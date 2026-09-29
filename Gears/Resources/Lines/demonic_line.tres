@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://2l6w6q8p5chr"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_3j0wb"]
+[ext_resource type="Texture2D" uid="uid://cx43dlc0nw2fj" path="res://Assets/gearsAssets/Lines/Flesh_Line.png" id="2_d0ilg"]
+
+[resource]
+script = ExtResource("1_3j0wb")
+type = 2
+texture = ExtResource("2_d0ilg")
+in_shop = 2
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://csvy073aifsos"]
+
+[ext_resource type="Script" uid="uid://3oicnq4u83rp" path="res://Shop/stats.gd" id="1_f7w10"]
+
+[node name="StatBar" type="Control" unique_id=1044031083]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_f7w10")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1692531650]
+layout_mode = 0
+offset_right = 60.0
+offset_bottom = 60.0
+expand_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=9416056]
+propagate_maximum_size = false
+layout_mode = 0
+offset_left = 60.05096
+offset_top = 12.423427
+offset_right = 360.05096
+offset_bottom = 63.423428
+scale = Vector2(0.659142, 0.659142)
+theme_override_constants/separation = 5

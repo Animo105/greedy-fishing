@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://h7fa1nbewfue"]
+
+[ext_resource type="Script" uid="uid://b550ddq5avurd" path="res://Shop/shop.gd" id="1_6mmxm"]
+[ext_resource type="Theme" uid="uid://dcks5er6tsnu3" path="res://Assets/theme.tres" id="1_u3phx"]
+
+[node name="Shop" type="Control" unique_id=1115530980]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_u3phx")
+script = ExtResource("1_6mmxm")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=216375886]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 3

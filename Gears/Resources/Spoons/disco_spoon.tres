@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://caxdma2wnrk78"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_bd586"]
+[ext_resource type="Texture2D" uid="uid://doqq7772eojgp" path="res://Assets/gearsAssets/Spoons/Disco_Spoon.png" id="2_i3lbf"]
+
+[resource]
+script = ExtResource("1_bd586")
+type = 1
+price = 900
+texture = ExtResource("2_i3lbf")
+strenght = -0.3
+speed = 0.5
+rarity = 3.0
+in_shop = 1
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://b3mjmisp70kjr"]
+
+[ext_resource type="Script" uid="uid://lmpnnvwi765h" path="res://Shop/bait_bucket.gd" id="1_fr1gt"]
+[ext_resource type="Texture2D" uid="uid://brbgdp6ymqs5i" path="res://Assets/textures/Shop/Bucket_worms2.png" id="2_rp02g"]
+[ext_resource type="Texture2D" uid="uid://bgsyejp6av7aw" path="res://Assets/textures/Shop/Bucket_worms.png" id="3_8im0h"]
+[ext_resource type="PackedScene" uid="uid://biw0vwxg4yf6p" path="res://Shop/tag.tscn" id="4_exppb"]
+[ext_resource type="Texture2D" uid="uid://bq00msmej2w6m" path="res://Assets/textures/Shop/Bait_Bucket.png" id="4_rp02g"]
+
+[node name="BaitBucket" type="Control" unique_id=988010713]
+custom_minimum_size = Vector2(153.077, 166.923)
+custom_maximum_size = Vector2(153.077, 166.923)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_fr1gt")
+frames = Array[Texture2D]([ExtResource("2_rp02g"), ExtResource("3_8im0h")])
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=528728140]
+custom_minimum_size = Vector2(153.077, 166.923)
+custom_maximum_size = Vector2(153.077, 166.923)
+layout_mode = 0
+offset_right = 199.0
+offset_bottom = 199.0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("4_rp02g")
+expand_mode = 2
+
+[node name="Tag" parent="TextureRect" unique_id=632957116 instance=ExtResource("4_exppb")]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 127.0
+offset_right = 159.0
+offset_bottom = 167.0
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="gui_input" from="TextureRect" to="." method="_on_texture_rect_gui_input"]

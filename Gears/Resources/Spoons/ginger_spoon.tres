@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://osmsenc3oanf"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_fit5u"]
+[ext_resource type="Texture2D" uid="uid://dqnhowlb6guu2" path="res://Assets/gearsAssets/Spoons/Gingerbread_Spoon.png" id="2_cui2i"]
+
+[resource]
+script = ExtResource("1_fit5u")
+type = 1
+price = 400
+texture = ExtResource("2_cui2i")
+level = 1
+speed = 1.0
+snap = 1.0
+rarity = 1.0
+in_shop = 1
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

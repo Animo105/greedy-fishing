@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://t8fe7l156pek"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_oxfcu"]
+[ext_resource type="Texture2D" uid="uid://bba0xhfpwu84j" path="res://Assets/gearsAssets/Hooks/Flesh_Hook2.png" id="2_e5gdg"]
+
+[resource]
+script = ExtResource("1_oxfcu")
+texture = ExtResource("2_e5gdg")
+level = 1
+strenght = 1.0
+speed = -0.5
+snap = -0.5
+rarity = 1.0
+in_shop = 2
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

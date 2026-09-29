@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="FishResource" format=3 uid="uid://dvfkuk3648ewe"]
+
+[ext_resource type="Texture2D" uid="uid://kjdbuhk004v" path="res://Assets/fish/Swamp/gray_fish_hidden.png" id="1_qnhtx"]
+[ext_resource type="Script" uid="uid://bb6mc2xy1t4uq" path="res://Fish/fish.gd" id="2_7nydg"]
+[ext_resource type="Texture2D" uid="uid://dtdeowb2keqst" path="res://Assets/fish/Swamp/gray_fish.png" id="3_lt61r"]
+
+[resource]
+script = ExtResource("2_7nydg")
+texture = ExtResource("3_lt61r")
+hidden_texture = ExtResource("1_qnhtx")
+catch_difficulty = 8.0
+speed = 0.2
+direction_change_frequency = 0.3
+base_value = 20.0
+metadata/_custom_type_script = "uid://bb6mc2xy1t4uq"

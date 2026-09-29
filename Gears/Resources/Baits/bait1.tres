@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://bvjviu2cpm7ag"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_ddssg"]
+[ext_resource type="Texture2D" uid="uid://d26wl1vau1xi3" path="res://Assets/gearsAssets/Baits/Baite.png" id="2_0yq12"]
+
+[resource]
+script = ExtResource("1_ddssg")
+type = 3
+price = 50
+texture = ExtResource("2_0yq12")
+speed = 3.0
+snap = 1.0
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

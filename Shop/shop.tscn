@@ -1,0 +1,209 @@
+[gd_scene format=3 uid="uid://h7fa1nbewfue"]
+
+[ext_resource type="Script" uid="uid://b550ddq5avurd" path="res://Shop/shop.gd" id="1_6mmxm"]
+[ext_resource type="Theme" uid="uid://dcks5er6tsnu3" path="res://Assets/theme.tres" id="1_u3phx"]
+[ext_resource type="Texture2D" uid="uid://dqnc7023jbst7" path="res://Assets/textures/Shop/animations/ShopShackSwamp2.png" id="3_w1rpo"]
+[ext_resource type="Resource" uid="uid://bvjviu2cpm7ag" path="res://Gears/Resources/Baits/bait1.tres" id="7_2b2i5"]
+[ext_resource type="PackedScene" uid="uid://b3mjmisp70kjr" path="res://Shop/bait_bucket.tscn" id="8_hfkrb"]
+[ext_resource type="Resource" uid="uid://c3gd7n1huyw7" path="res://Gears/Resources/Baits/bait2.tres" id="10_2wh60"]
+[ext_resource type="Resource" uid="uid://do3o0337y223o" path="res://Gears/Resources/Baits/bait3.tres" id="13_07ndg"]
+[ext_resource type="Texture2D" uid="uid://cv1uiwryd4h4i" path="res://Assets/textures/Shop/Bucket_shrimp2.png" id="13_jhfdn"]
+[ext_resource type="Texture2D" uid="uid://xfenj2nhkp6l" path="res://Assets/textures/Shop/Bucket_shrimp.png" id="14_eu4ty"]
+[ext_resource type="Texture2D" uid="uid://ogdxy6y46nc" path="res://Assets/textures/Shop/Inventory.png" id="16_3mw0j"]
+[ext_resource type="Texture2D" uid="uid://d0j5xwp1cw5u4" path="res://Assets/textures/Shop/Squid_bucket.png" id="16_b5trs"]
+[ext_resource type="PackedScene" uid="uid://bifsyr3rmvq52" path="res://Shop/SkillBar.tscn" id="17_6qmg5"]
+[ext_resource type="Texture2D" uid="uid://2cw2sytyfa5d" path="res://Assets/textures/Shop/Squid_bucket2.png" id="17_16e15"]
+[ext_resource type="PackedScene" uid="uid://c5pb0mmkl42kc" path="res://Shop/shop_rod_slot.tscn" id="18_quj4d"]
+[ext_resource type="Texture2D" uid="uid://dieh2iaah5dhx" path="res://Assets/textures/Shop/Strength.png" id="20_2wh60"]
+[ext_resource type="PackedScene" uid="uid://xxvnb2poxaw" path="res://Shop/video_layer.tscn" id="21_w1rpo"]
+[ext_resource type="Texture2D" uid="uid://bk5py7pm8s4ok" path="res://Assets/textures/Shop/Snap.png" id="23_b7bcc"]
+[ext_resource type="Texture2D" uid="uid://cgl0mo5vjbisq" path="res://Assets/textures/Shop/arrow_next.png" id="24_2wh60"]
+[ext_resource type="Texture2D" uid="uid://dcujwelfnieqn" path="res://Assets/textures/Shop/Speed.png" id="24_q8r8l"]
+[ext_resource type="Texture2D" uid="uid://6nnmmxhojud8" path="res://Assets/textures/Shop/arrow_next_hover.png" id="25_ytoel"]
+[ext_resource type="Texture2D" uid="uid://qfnimdp76wj2" path="res://Assets/textures/Shop/Rarity.png" id="26_07ndg"]
+
+[node name="Shop" type="Control" unique_id=1115530980]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_u3phx")
+script = ExtResource("1_6mmxm")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=322902441]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_w1rpo")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=216375886]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.087000005
+anchor_right = 0.50200003
+anchor_bottom = 1.0
+offset_left = 25.639992
+offset_top = 113.0
+offset_right = 0.4399414
+offset_bottom = -192.0
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 20
+columns = 3
+
+[node name="Baits" type="HBoxContainer" parent="." unique_id=1045309075]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.08400001
+anchor_top = 1.0
+anchor_right = 0.508
+anchor_bottom = 1.0
+offset_left = 0.47999573
+offset_top = -203.0
+offset_right = -0.23999023
+offset_bottom = -36.0
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="BaitBucket" parent="Baits" unique_id=988010713 instance=ExtResource("8_hfkrb")]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+setup_gear = ExtResource("7_2b2i5")
+
+[node name="BaitBucket2" parent="Baits" unique_id=685434837 instance=ExtResource("8_hfkrb")]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+frames = Array[Texture2D]([ExtResource("13_jhfdn"), ExtResource("14_eu4ty")])
+setup_gear = ExtResource("10_2wh60")
+
+[node name="BaitBucket3" parent="Baits" unique_id=547223277 instance=ExtResource("8_hfkrb")]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+frames = Array[Texture2D]([ExtResource("16_b5trs"), ExtResource("17_16e15")])
+setup_gear = ExtResource("13_07ndg")
+
+[node name="MoneyLabel" type="Label" parent="." unique_id=466972300]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.666
+anchor_top = 0.15400001
+anchor_right = 0.666
+anchor_bottom = 0.15400001
+offset_left = -79.47998
+offset_top = -17.880005
+offset_right = 89.52002
+offset_bottom = 47.119987
+rotation = -0.18986747
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 28
+text = "0$"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Equipment" type="TextureRect" parent="." unique_id=1685118257]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -493.0
+offset_top = -533.0
+offset_right = -41.0
+offset_bottom = 15.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.082414, 0.96591586)
+texture = ExtResource("16_3mw0j")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Equipment" unique_id=665989312]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 175.53357
+offset_top = 123.19917
+offset_right = -13.166138
+offset_bottom = -132.84998
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Strength" parent="Equipment/VBoxContainer" unique_id=1843761292 instance=ExtResource("17_6qmg5")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture = ExtResource("20_2wh60")
+
+[node name="Snap" parent="Equipment/VBoxContainer" unique_id=1887145680 instance=ExtResource("17_6qmg5")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture = ExtResource("23_b7bcc")
+
+[node name="Speed" parent="Equipment/VBoxContainer" unique_id=550724686 instance=ExtResource("17_6qmg5")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture = ExtResource("24_q8r8l")
+
+[node name="Rarity" parent="Equipment/VBoxContainer" unique_id=1242390378 instance=ExtResource("17_6qmg5")]
+layout_mode = 2
+texture = ExtResource("26_07ndg")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Equipment" unique_id=876718618]
+layout_mode = 0
+offset_left = 32.33515
+offset_top = 16.564583
+offset_right = 162.33514
+offset_bottom = 544.42346
+theme_override_constants/separation = 10
+
+[node name="Line" parent="Equipment/VBoxContainer2" unique_id=907431474 instance=ExtResource("18_quj4d")]
+custom_minimum_size = Vector2(120, 120)
+custom_maximum_size = Vector2(120, 120)
+layout_mode = 2
+
+[node name="Spoon" parent="Equipment/VBoxContainer2" unique_id=1101554222 instance=ExtResource("18_quj4d")]
+custom_minimum_size = Vector2(120, 120)
+custom_maximum_size = Vector2(120, 120)
+layout_mode = 2
+
+[node name="Hook" parent="Equipment/VBoxContainer2" unique_id=1062286987 instance=ExtResource("18_quj4d")]
+custom_minimum_size = Vector2(120, 120)
+custom_maximum_size = Vector2(120, 120)
+layout_mode = 2
+
+[node name="Bait" parent="Equipment/VBoxContainer2" unique_id=1404807040 instance=ExtResource("18_quj4d")]
+custom_minimum_size = Vector2(120, 120)
+custom_maximum_size = Vector2(120, 120)
+layout_mode = 2
+
+[node name="NextButton" type="TextureButton" parent="." unique_id=773777067]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("24_2wh60")
+texture_pressed = ExtResource("24_2wh60")
+texture_hover = ExtResource("25_ytoel")
+texture_disabled = ExtResource("24_2wh60")
+texture_focused = ExtResource("25_ytoel")
+
+[node name="VideoLayer" parent="." unique_id=1327021202 instance=ExtResource("21_w1rpo")]
+
+[connection signal="gui_input" from="Equipment/VBoxContainer/Strength" to="." method="_on_strength_gui_input"]
+[connection signal="gui_input" from="Equipment/VBoxContainer/Snap" to="." method="_on_snap_gui_input"]
+[connection signal="gui_input" from="Equipment/VBoxContainer/Speed" to="." method="_on_speed_gui_input"]
+[connection signal="pressed" from="NextButton" to="." method="_on_next_button_pressed"]

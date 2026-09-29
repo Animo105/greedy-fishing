@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="FishResource" format=3 uid="uid://bgmrrpun3dbqa"]
+
+[ext_resource type="Texture2D" uid="uid://bo117g28xvqp0" path="res://Assets/fish/Swamp/pink_fish_hidden.png" id="1_3rdjq"]
+[ext_resource type="Script" uid="uid://bb6mc2xy1t4uq" path="res://Fish/fish.gd" id="1_b8i0d"]
+[ext_resource type="Texture2D" uid="uid://cr777uj0br8jw" path="res://Assets/fish/Swamp/pink_fish.png" id="3_haahu"]
+
+[resource]
+script = ExtResource("1_b8i0d")
+texture = ExtResource("3_haahu")
+hidden_texture = ExtResource("1_3rdjq")
+catch_difficulty = 10.0
+catch_recovery_speed = 1.2
+speed = 0.4
+direction_change_frequency = 0.2
+base_value = 100.0
+rarity = 3.5
+metadata/_custom_type_script = "uid://bb6mc2xy1t4uq"

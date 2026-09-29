@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://d3bc0oicahxq7"]
+
+[ext_resource type="Script" uid="uid://b4dlsa2etemds" path="res://Globals/Autoloads/SFXManager.gd" id="1_pl5o8"]
+[ext_resource type="AudioStream" uid="uid://bkgnxd4vheshj" path="res://Assets/SFX/buttonclick_generic.ogg" id="2_tdrek"]
+[ext_resource type="AudioStream" uid="uid://b1wj4hs5jshkr" path="res://Assets/SFX/buttonclick_mainmenu.ogg" id="3_c23d6"]
+[ext_resource type="AudioStream" uid="uid://dl4228mlhgrqu" path="res://Assets/SFX/buttonhover2.ogg" id="4_mo7bs"]
+[ext_resource type="AudioStream" uid="uid://bo25q4hmoeqhh" path="res://Assets/SFX/buttonhover.ogg" id="5_odvgc"]
+[ext_resource type="AudioStream" uid="uid://bhhd3kq5h7y4d" path="res://Assets/SFX/cashregisternoise.ogg" id="6_nc6sx"]
+[ext_resource type="AudioStream" uid="uid://nuppjeymm1y0" path="res://Assets/SFX/endofday.ogg" id="7_tdk6g"]
+[ext_resource type="AudioStream" uid="uid://q5ql5ov5ylst" path="res://Assets/SFX/enterarea.ogg" id="8_7tsmw"]
+[ext_resource type="AudioStream" uid="uid://ddllkxd8gjcwb" path="res://Assets/SFX/fishfail.ogg" id="9_d3ls6"]
+[ext_resource type="AudioStream" uid="uid://bn1tjru3qhitb" path="res://Assets/SFX/fishget_legendary.ogg" id="10_3uaqh"]
+[ext_resource type="AudioStream" uid="uid://yuu4uhe2dxn6" path="res://Assets/SFX/fishget_normal.ogg" id="11_fdn2j"]
+[ext_resource type="AudioStream" uid="uid://bcifti3pc5ci6" path="res://Assets/SFX/fishget_rare.ogg" id="12_0o2k0"]
+[ext_resource type="AudioStream" uid="uid://lkgc248p87xo" path="res://Assets/SFX/fishstruggle1.ogg" id="13_jpsfo"]
+[ext_resource type="AudioStream" uid="uid://c168l0db8owg3" path="res://Assets/SFX/fishstruggle2.ogg" id="14_plld7"]
+[ext_resource type="AudioStream" uid="uid://blttn58u56rap" path="res://Assets/SFX/lockopening.ogg" id="15_wityj"]
+[ext_resource type="AudioStream" uid="uid://dq4cyf3vyidbb" path="res://Assets/SFX/rowing1.ogg" id="16_ajakj"]
+[ext_resource type="AudioStream" uid="uid://b60sp5yh2bxyj" path="res://Assets/SFX/rowing2.ogg" id="17_qbhj2"]
+[ext_resource type="AudioStream" uid="uid://coybil48ucf4w" path="res://Assets/SFX/rowing3.ogg" id="18_dkq8a"]
+[ext_resource type="AudioStream" uid="uid://bp8jqj3uhuntx" path="res://Assets/SFX/rowing4.ogg" id="19_fa5vk"]
+
+[node name="SfxManager" type="Node" unique_id=1837633547]
+script = ExtResource("1_pl5o8")
+sfxs = Dictionary[String, AudioStream]({
+"": null,
+"buttonclick_generic": ExtResource("2_tdrek"),
+"buttonclick_mainmenu": ExtResource("3_c23d6"),
+"buttonhover": ExtResource("5_odvgc"),
+"buttonhover2": ExtResource("4_mo7bs"),
+"cashregisternoise": ExtResource("6_nc6sx"),
+"endofday": ExtResource("7_tdk6g"),
+"enterarea": ExtResource("8_7tsmw"),
+"fishfail": ExtResource("9_d3ls6"),
+"fishget_legendary": ExtResource("10_3uaqh"),
+"fishget_normal": ExtResource("11_fdn2j"),
+"fishget_rare": ExtResource("12_0o2k0"),
+"fishstruggle1": ExtResource("13_jpsfo"),
+"fishstruggle2": ExtResource("14_plld7"),
+"lockopening": ExtResource("15_wityj"),
+"rowing1": ExtResource("16_ajakj"),
+"rowing2": ExtResource("17_qbhj2"),
+"rowing3": ExtResource("18_dkq8a"),
+"rowing4": ExtResource("19_fa5vk")
+})

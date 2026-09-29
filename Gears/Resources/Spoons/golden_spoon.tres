@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://b4tmymav81b7t"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_8txkt"]
+[ext_resource type="Texture2D" uid="uid://ddgx2d3ij5ikn" path="res://Assets/gearsAssets/Spoons/GoldenSpoon.png" id="2_nq0tq"]
+
+[resource]
+script = ExtResource("1_8txkt")
+type = 1
+price = 400
+texture = ExtResource("2_nq0tq")
+level = 1
+strenght = -0.2
+rarity = 2.0
+in_shop = 1
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

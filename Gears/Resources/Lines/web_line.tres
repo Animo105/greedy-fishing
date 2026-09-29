@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://b3fvipd56tt20"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_2s1o2"]
+[ext_resource type="Texture2D" uid="uid://dq11un86lfxij" path="res://Assets/gearsAssets/Lines/web_line.png" id="2_vm6g0"]
+
+[resource]
+script = ExtResource("1_2s1o2")
+type = 2
+price = 300
+texture = ExtResource("2_vm6g0")
+level = 1
+speed = 1.0
+snap = 0.5
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

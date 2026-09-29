@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c5pb0mmkl42kc"]
+
+[ext_resource type="Script" uid="uid://4ii5352udspn" path="res://Shop/shop_rod_slot.gd" id="1_ilkjb"]
+[ext_resource type="Texture2D" uid="uid://cnolclvgldaek" path="res://Assets/textures/Shop/Hover.png" id="2_w7whl"]
+
+[node name="ShopRodSlot" type="Control" unique_id=907431474]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ilkjb")
+
+[node name="preview" type="TextureRect" parent="." unique_id=1522393462]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_w7whl")
+expand_mode = 1
+
+[node name="texture" type="TextureRect" parent="." unique_id=1643041302]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="FishResource" format=3 uid="uid://cmu6no451m5y7"]
+
+[ext_resource type="Texture2D" uid="uid://mry5ct6ovk3h" path="res://Assets/fish/fish_template_hidden.png" id="1_byspg"]
+[ext_resource type="Script" uid="uid://bb6mc2xy1t4uq" path="res://Fish/fish.gd" id="1_e4y1q"]
+[ext_resource type="Texture2D" uid="uid://di0t82bfi8bx1" path="res://Assets/fish/fish_template.png" id="3_aciq1"]
+
+[resource]
+script = ExtResource("1_e4y1q")
+texture = ExtResource("3_aciq1")
+hidden_texture = ExtResource("1_byspg")
+catch_difficulty = 8.0
+catch_recovery_speed = 0.5
+speed = 0.15
+direction_change_frequency = 0.1
+base_value = 100.0
+habitat = 3
+metadata/_custom_type_script = "uid://bb6mc2xy1t4uq"

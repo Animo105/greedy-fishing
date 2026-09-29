@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="FishResource" format=3 uid="uid://bddctd2v0cbs4"]
+
+[ext_resource type="Texture2D" uid="uid://bw7g3xuggh5ir" path="res://Assets/fish/Volcano/hermit_fish_hidden.png" id="1_tfawb"]
+[ext_resource type="Script" uid="uid://bb6mc2xy1t4uq" path="res://Fish/fish.gd" id="2_jsy8w"]
+[ext_resource type="Texture2D" uid="uid://cbnufcrl8hv76" path="res://Assets/fish/Volcano/hermit_fish.png" id="3_of2ag"]
+
+[resource]
+script = ExtResource("2_jsy8w")
+texture = ExtResource("3_of2ag")
+hidden_texture = ExtResource("1_tfawb")
+catch_difficulty = 50.0
+catch_recovery_speed = 5.0
+speed = 0.4
+direction_change_frequency = 0.45
+base_value = 400.0
+rarity = 1.5
+habitat = 2
+metadata/_custom_type_script = "uid://bb6mc2xy1t4uq"

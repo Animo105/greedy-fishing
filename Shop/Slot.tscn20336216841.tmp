@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://dsgd5jawlxvgi"]
+
+[ext_resource type="Script" uid="uid://csg3va7sbxqy" path="res://Shop/slot.gd" id="1_h2c3q"]
+[ext_resource type="Texture2D" uid="uid://fd6175gtgwcg" path="res://Assets/textures/Tag.png" id="2_arf5i"]
+[ext_resource type="FontFile" uid="uid://bt5jw78ub44tu" path="res://Assets/Comic Sans MS.ttf" id="3_arf5i"]
+[ext_resource type="Texture2D" uid="uid://dk4cvr36s6v70" path="res://Assets/textures/Tag_big.png" id="4_bohsq"]
+[ext_resource type="Texture2D" uid="uid://v2gr88mjq0sr" path="res://Assets/textures/Tag_small.png" id="5_tbhmc"]
+
+[node name="Slot" type="Control" unique_id=2051599230]
+custom_minimum_size = Vector2(126, 126)
+custom_maximum_size = Vector2(126, 126)
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h2c3q")
+
+[node name="Item" type="TextureRect" parent="." unique_id=2106111644]
+custom_minimum_size = Vector2(126, 126)
+custom_maximum_size = Vector2(256, 256)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.84000975, 0.84000975)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+expand_mode = 2
+
+[node name="Tag" type="TextureRect" parent="." unique_id=642074189]
+visible = false
+layout_mode = 0
+offset_left = 11.396545
+offset_top = -18.7854
+offset_right = 154.39655
+offset_bottom = 82.2146
+scale = Vector2(0.46811762, 0.46811762)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("2_arf5i")
+
+[node name="Price" type="Label" parent="Tag" unique_id=192499933]
+layout_mode = 0
+offset_left = 36.252384
+offset_top = 6.7076244
+offset_right = 78.83739
+offset_bottom = 29.707624
+rotation = 0.3109843
+scale = Vector2(2.255, 2.255)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_arf5i")
+horizontal_alignment = 1
+
+[node name="TagBig" type="TextureRect" parent="." unique_id=695408279]
+visible = false
+layout_mode = 0
+offset_left = -8.603455
+offset_top = -24.7854
+offset_right = 170.39655
+offset_bottom = 87.2146
+scale = Vector2(0.46811762, 0.46811762)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("4_bohsq")
+
+[node name="Price" type="Label" parent="TagBig" unique_id=669548963]
+layout_mode = 0
+offset_left = 49.98002
+offset_top = 11.139515
+offset_right = 100.98002
+offset_bottom = 34.139515
+rotation = 0.3109843
+scale = Vector2(2.255, 2.255)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_arf5i")
+horizontal_alignment = 1
+
+[node name="TagSmall" type="TextureRect" parent="." unique_id=1023711800]
+visible = false
+layout_mode = 0
+offset_left = 7.3965454
+offset_top = -20.7854
+offset_right = 150.39655
+offset_bottom = 80.2146
+scale = Vector2(0.46811762, 0.46811762)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("5_tbhmc")
+
+[node name="Price" type="Label" parent="TagSmall" unique_id=536614011]
+layout_mode = 0
+offset_left = 46.086353
+offset_top = 10.521624
+offset_right = 88.67136
+offset_bottom = 33.521626
+rotation = 0.3109843
+scale = Vector2(2.255, 2.255)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_arf5i")
+text = "Sold"
+horizontal_alignment = 1
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://bsjh2ykbamaia"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_w6bwv"]
+[ext_resource type="Texture2D" uid="uid://dkpogcdcfddao" path="res://Assets/gearsAssets/Hooks/PlantHook3.png" id="2_w6bwv"]
+
+[resource]
+script = ExtResource("1_w6bwv")
+price = 500
+texture = ExtResource("2_w6bwv")
+level = 1
+strenght = 0.2
+speed = 1.0
+snap = -0.5
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://c2he8d2k7u27i"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_u7eme"]
+[ext_resource type="Texture2D" uid="uid://bkchw14rhcwog" path="res://Assets/gearsAssets/Spoons/Cobalt_Spoon.png" id="2_d7u5q"]
+
+[resource]
+script = ExtResource("1_u7eme")
+type = 1
+price = 500
+texture = ExtResource("2_d7u5q")
+strenght = 0.2
+speed = -1.0
+rarity = 3.0
+in_shop = 2
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

@@ -1,0 +1,218 @@
+[gd_scene format=3 uid="uid://cvfxjkik6kjlh"]
+
+[ext_resource type="Script" uid="uid://cef5srpaxdjfu" path="res://Level Select/level_select.gd" id="1_x1q5d"]
+[ext_resource type="Texture2D" uid="uid://e67iux2jofwq" path="res://Assets/textures/background_water.png" id="2_0mg3m"]
+[ext_resource type="Texture2D" uid="uid://ckgxti6ahwwju" path="res://Assets/level icons/boat.png" id="3_aeh2r"]
+[ext_resource type="Texture2D" uid="uid://k3c50qjgapd4" path="res://Assets/level icons/callendar.png" id="4_4ur2p"]
+[ext_resource type="Texture2D" uid="uid://db07g8ub1tgbi" path="res://Assets/buttons/left_normal.png" id="4_k822h"]
+[ext_resource type="Texture2D" uid="uid://bfnpwwghfg1fw" path="res://Assets/buttons/left_pressed.png" id="5_phuba"]
+[ext_resource type="Texture2D" uid="uid://c7di1vt0rrk6g" path="res://Assets/buttons/left_hover.png" id="6_ytddk"]
+[ext_resource type="Texture2D" uid="uid://33c2jsf1fr1t" path="res://Assets/buttons/left_disabled.png" id="7_ly5be"]
+[ext_resource type="Texture2D" uid="uid://dt7balo1ragh5" path="res://Assets/buttons/right_normal.png" id="8_73a0u"]
+[ext_resource type="Texture2D" uid="uid://dlmu4svmwycp4" path="res://Assets/buttons/right_pressed.png" id="9_uyby4"]
+[ext_resource type="Texture2D" uid="uid://bl7twqe5jy4h3" path="res://Assets/buttons/right_hover.png" id="10_nqup2"]
+[ext_resource type="Texture2D" uid="uid://dvm6dbes3vpgw" path="res://Assets/buttons/right_disabled.png" id="11_7djbb"]
+[ext_resource type="Texture2D" uid="uid://doo5u0ansx4vb" path="res://Assets/buttons/unlock_normal.png" id="12_14m41"]
+[ext_resource type="Texture2D" uid="uid://crshk7iql75jb" path="res://Assets/buttons/enter_normal.png" id="12_aeh2r"]
+[ext_resource type="Texture2D" uid="uid://dutor5yq1xmdl" path="res://Assets/buttons/enter_pressed.png" id="13_0mg3m"]
+[ext_resource type="Texture2D" uid="uid://dftma2fhd8keq" path="res://Assets/buttons/unlock_pressed.png" id="13_uel03"]
+[ext_resource type="Texture2D" uid="uid://doe6xucmwcuyo" path="res://Assets/buttons/unlock_hover.png" id="14_1i3wi"]
+[ext_resource type="Texture2D" uid="uid://bai4bexrsrrsk" path="res://Assets/buttons/enter_hover.png" id="14_4ur2p"]
+[ext_resource type="Texture2D" uid="uid://o2lvibe6ymav" path="res://Assets/buttons/unlock_disabled.png" id="15_6tqpm"]
+[ext_resource type="Texture2D" uid="uid://d3q0703mspoe2" path="res://Assets/buttons/enter_disabled.png" id="15_f620x"]
+[ext_resource type="Texture2D" uid="uid://dk4cvr36s6v70" path="res://Assets/textures/Shop/Tag_big.png" id="16_0mg3m"]
+[ext_resource type="Texture2D" uid="uid://bpbvepduoi3yg" path="res://Assets/fish/Volcano/RedFish_hidden.png" id="18_f620x"]
+
+[node name="LevelSelect" type="Control" unique_id=2127754476]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x1q5d")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1425643961]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_0mg3m")
+
+[node name="Callendar" type="TextureRect" parent="." unique_id=585873378]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -184.0
+offset_bottom = 184.0
+grow_horizontal = 0
+texture = ExtResource("4_4ur2p")
+expand_mode = 1
+
+[node name="DayNumber" type="Label" parent="Callendar" unique_id=1881276217]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -31.0
+offset_right = -12.0
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+horizontal_alignment = 1
+
+[node name="CenterMarker" type="Control" parent="." unique_id=1784971592]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SpriteLayer" type="Node2D" parent="." unique_id=1976952966]
+
+[node name="Boat" type="TextureRect" parent="." unique_id=104393912]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -402.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_aeh2r")
+
+[node name="FishDisplay" type="HFlowContainer" parent="." unique_id=1604793732]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.2
+anchor_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=297162581]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 100
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1230065551]
+layout_mode = 2
+
+[node name="Left" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=436885691]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("4_k822h")
+texture_pressed = ExtResource("5_phuba")
+texture_hover = ExtResource("6_ytddk")
+texture_disabled = ExtResource("7_ly5be")
+texture_focused = ExtResource("6_ytddk")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="SelectButton" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=1564328344]
+visible = false
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("12_aeh2r")
+texture_pressed = ExtResource("13_0mg3m")
+texture_hover = ExtResource("14_4ur2p")
+texture_disabled = ExtResource("15_f620x")
+texture_focused = ExtResource("14_4ur2p")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="UnlockButton" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=551456349]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("12_14m41")
+texture_pressed = ExtResource("13_uel03")
+texture_hover = ExtResource("14_1i3wi")
+texture_disabled = ExtResource("15_6tqpm")
+texture_focused = ExtResource("14_1i3wi")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="tag" type="TextureRect" parent="MarginContainer/HBoxContainer/UnlockButton" unique_id=737532898]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 22.0
+offset_top = -123.0
+offset_right = 51.0
+offset_bottom = -11.0
+grow_horizontal = 2
+rotation = 0.6254329
+texture = ExtResource("16_0mg3m")
+flip_v = true
+
+[node name="price" type="Label" parent="MarginContainer/HBoxContainer/UnlockButton" unique_id=1790831106]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 3.0092869
+offset_top = -51.87706
+offset_right = -53.41546
+offset_bottom = -23.87706
+grow_horizontal = 2
+rotation = 0.24077666
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+
+[node name="fishImage" type="TextureRect" parent="MarginContainer/HBoxContainer/UnlockButton" unique_id=1828623271]
+layout_mode = 0
+offset_left = 70.0
+offset_top = -38.0
+offset_right = 133.0
+offset_bottom = 25.0
+texture = ExtResource("18_f620x")
+expand_mode = 1
+
+[node name="Right" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=220472144]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("8_73a0u")
+texture_pressed = ExtResource("9_uyby4")
+texture_hover = ExtResource("10_nqup2")
+texture_disabled = ExtResource("11_7djbb")
+texture_focused = ExtResource("10_nqup2")
+ignore_texture_size = true
+stretch_mode = 4
+
+[connection signal="resized" from="." to="." method="_on_resized"]
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/Left" to="." method="_on_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Left" to="." method="_on_left_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/SelectButton" to="." method="_on_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/SelectButton" to="." method="_on_select_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/UnlockButton" to="." method="_on_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/UnlockButton" to="." method="_on_unlock_button_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/HBoxContainer/Right" to="." method="_on_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Right" to="." method="_on_button_2_pressed"]

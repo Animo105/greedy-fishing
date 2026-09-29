@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="FishResource" format=3 uid="uid://b77skgjknmyt5"]
+
+[ext_resource type="Texture2D" uid="uid://egbqsjno2lm8" path="res://Assets/fish/Frozen/Parrot_fish_hidden.png" id="1_jol3o"]
+[ext_resource type="Script" uid="uid://bb6mc2xy1t4uq" path="res://Fish/fish.gd" id="2_3571x"]
+[ext_resource type="Texture2D" uid="uid://bphnhbs1605v7" path="res://Assets/fish/Frozen/Parrot_fish.png" id="3_7r0my"]
+
+[resource]
+script = ExtResource("2_3571x")
+texture = ExtResource("3_7r0my")
+hidden_texture = ExtResource("1_jol3o")
+catch_difficulty = 20.0
+catch_recovery_speed = 1.5
+speed = 0.4
+direction_change_frequency = 0.3
+base_value = 100.0
+rarity = 2.0
+habitat = 1
+metadata/_custom_type_script = "uid://bb6mc2xy1t4uq"

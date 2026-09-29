@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="FishResource" format=3 uid="uid://d35yrx7h10vkv"]
+
+[ext_resource type="Script" uid="uid://bb6mc2xy1t4uq" path="res://Fish/fish.gd" id="1_vfhxf"]
+[ext_resource type="Texture2D" uid="uid://485mqjbr8j4f" path="res://Assets/fish/Frozen/pixel_fish2 _hidden.png" id="1_ww54p"]
+[ext_resource type="Texture2D" uid="uid://dt3phqum0vbve" path="res://Assets/fish/Frozen/pixel_fish2.png" id="3_rffln"]
+
+[resource]
+script = ExtResource("1_vfhxf")
+texture = ExtResource("3_rffln")
+hidden_texture = ExtResource("1_ww54p")
+catch_difficulty = 25.0
+catch_recovery_speed = 1.5
+speed = 0.45
+direction_change_frequency = 0.2
+base_value = 200.0
+rarity = 3.0
+habitat = 1
+metadata/_custom_type_script = "uid://bb6mc2xy1t4uq"

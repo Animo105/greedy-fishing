@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://b0yil2vt23kut"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_juor2"]
+[ext_resource type="Texture2D" uid="uid://do4m12vbp2j0w" path="res://Assets/gearsAssets/Lines/Cobalt_Line.png" id="2_aq721"]
+
+[resource]
+script = ExtResource("1_juor2")
+type = 2
+texture = ExtResource("2_aq721")
+in_shop = 2
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://cvfxjkik6kjlh"]
+
+[ext_resource type="Script" uid="uid://cef5srpaxdjfu" path="res://Level Select/level_select.gd" id="1_x1q5d"]
+[ext_resource type="Texture2D" uid="uid://bw40etruspjdf" path="res://Assets/level icons/level_selct_background.png" id="2_k822h"]
+[ext_resource type="Texture2D" uid="uid://db07g8ub1tgbi" path="res://Assets/buttons/left_normal.png" id="4_k822h"]
+[ext_resource type="Texture2D" uid="uid://bfnpwwghfg1fw" path="res://Assets/buttons/left_pressed.png" id="5_phuba"]
+[ext_resource type="Texture2D" uid="uid://ckgxti6ahwwju" path="res://Assets/boat.png" id="6_73a0u"]
+[ext_resource type="Texture2D" uid="uid://c7di1vt0rrk6g" path="res://Assets/buttons/left_hover.png" id="6_ytddk"]
+[ext_resource type="Texture2D" uid="uid://33c2jsf1fr1t" path="res://Assets/buttons/left_disabled.png" id="7_ly5be"]
+[ext_resource type="Texture2D" uid="uid://dt7balo1ragh5" path="res://Assets/buttons/right_normal.png" id="8_73a0u"]
+[ext_resource type="Texture2D" uid="uid://dlmu4svmwycp4" path="res://Assets/buttons/right_pressed.png" id="9_uyby4"]
+[ext_resource type="Texture2D" uid="uid://bl7twqe5jy4h3" path="res://Assets/buttons/right_hover.png" id="10_nqup2"]
+[ext_resource type="Texture2D" uid="uid://dvm6dbes3vpgw" path="res://Assets/buttons/right_disabled.png" id="11_7djbb"]
+[ext_resource type="Texture2D" uid="uid://doo5u0ansx4vb" path="res://Assets/buttons/unlock_normal.png" id="12_14m41"]
+[ext_resource type="Texture2D" uid="uid://dftma2fhd8keq" path="res://Assets/buttons/unlock_pressed.png" id="13_uel03"]
+[ext_resource type="Texture2D" uid="uid://doe6xucmwcuyo" path="res://Assets/buttons/unlock_hover.png" id="14_1i3wi"]
+[ext_resource type="Texture2D" uid="uid://o2lvibe6ymav" path="res://Assets/buttons/unlock_disabled.png" id="15_6tqpm"]
+
+[node name="LevelSelect" type="Node2D" unique_id=647650039]
+script = ExtResource("1_x1q5d")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=334011105]
+position = Vector2(651.50006, 341.5)
+scale = Vector2(2.5957034, 1.404297)
+texture = ExtResource("2_k822h")
+
+[node name="Boat" type="Sprite2D" parent="." unique_id=186891850]
+position = Vector2(645, 501)
+scale = Vector2(1.2187499, 1.0049751)
+texture = ExtResource("6_73a0u")
+
+[node name="Left" type="TextureButton" parent="." unique_id=436885691]
+offset_left = 116.0
+offset_top = 384.0
+offset_right = 160.0
+offset_bottom = 415.0
+scale = Vector2(0.5, 0.5)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("4_k822h")
+texture_pressed = ExtResource("5_phuba")
+texture_hover = ExtResource("6_ytddk")
+texture_disabled = ExtResource("7_ly5be")
+texture_focused = ExtResource("6_ytddk")
+
+[node name="Right" type="TextureButton" parent="." unique_id=220472144]
+offset_left = 1092.0
+offset_top = 399.0
+offset_right = 1141.0
+offset_bottom = 430.0
+scale = Vector2(0.5, 0.5)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("8_73a0u")
+texture_pressed = ExtResource("9_uyby4")
+texture_hover = ExtResource("10_nqup2")
+texture_disabled = ExtResource("11_7djbb")
+texture_focused = ExtResource("10_nqup2")
+
+[node name="SelectButton" type="TextureButton" parent="." unique_id=1564328344]
+offset_left = 582.0
+offset_top = 378.0
+offset_right = 838.0
+offset_bottom = 634.0
+scale = Vector2(0.5, 0.5)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("12_14m41")
+texture_pressed = ExtResource("13_uel03")
+texture_hover = ExtResource("14_1i3wi")
+texture_disabled = ExtResource("15_6tqpm")
+texture_focused = ExtResource("14_1i3wi")
+
+[node name="FishDisplay" type="HFlowContainer" parent="." unique_id=1604793732]
+offset_left = 377.0
+offset_top = -111.0
+offset_right = 909.0
+offset_bottom = -37.0
+
+[connection signal="pressed" from="Left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="Right" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="SelectButton" to="." method="_on_select_pressed"]

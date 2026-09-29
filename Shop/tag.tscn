@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://biw0vwxg4yf6p"]
+
+[ext_resource type="Script" uid="uid://cnkhnjt868d7y" path="res://Shop/tag.gd" id="1_g7rg5"]
+[ext_resource type="Texture2D" uid="uid://fd6175gtgwcg" path="res://Assets/textures/Shop/Tag.png" id="2_2sk11"]
+[ext_resource type="FontFile" uid="uid://bt5jw78ub44tu" path="res://Assets/Comic Sans MS.ttf" id="3_fumiu"]
+[ext_resource type="Texture2D" uid="uid://dk4cvr36s6v70" path="res://Assets/textures/Shop/Tag_big.png" id="4_lpb8s"]
+[ext_resource type="Texture2D" uid="uid://v2gr88mjq0sr" path="res://Assets/textures/Shop/Tag_small.png" id="5_doumi"]
+
+[node name="Tag" type="Control" unique_id=632957116]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+script = ExtResource("1_g7rg5")
+
+[node name="Tag" type="TextureRect" parent="." unique_id=314628551]
+visible = false
+layout_mode = 0
+offset_left = -67.60344
+offset_top = -46.785416
+offset_right = 75.39656
+offset_bottom = 54.214584
+scale = Vector2(0.46811762, 0.46811762)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("2_2sk11")
+
+[node name="Price" type="Label" parent="Tag" unique_id=1385801343]
+layout_mode = 0
+offset_left = 36.252384
+offset_top = 6.7076244
+offset_right = 78.83739
+offset_bottom = 29.707624
+rotation = 0.3109843
+scale = Vector2(2.255, 2.255)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_fumiu")
+horizontal_alignment = 1
+
+[node name="TagBig" type="TextureRect" parent="." unique_id=575327961]
+visible = false
+layout_mode = 0
+offset_left = -87.60347
+offset_top = -52.785416
+offset_right = 91.39653
+offset_bottom = 59.214584
+scale = Vector2(0.46811762, 0.46811762)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("4_lpb8s")
+
+[node name="PriceBig" type="Label" parent="TagBig" unique_id=813780724]
+layout_mode = 0
+offset_left = 49.98002
+offset_top = 11.139515
+offset_right = 100.98002
+offset_bottom = 34.139515
+rotation = 0.3109843
+scale = Vector2(2.255, 2.255)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_fumiu")
+horizontal_alignment = 1
+
+[node name="TagSmall" type="TextureRect" parent="." unique_id=1827235666]
+visible = false
+layout_mode = 0
+offset_left = -71.60344
+offset_top = -48.785416
+offset_right = 71.39656
+offset_bottom = 52.214584
+scale = Vector2(0.46811762, 0.46811762)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("5_doumi")
+
+[node name="PriceSmall" type="Label" parent="TagSmall" unique_id=392225138]
+layout_mode = 0
+offset_left = 46.086353
+offset_top = 10.521624
+offset_right = 88.67136
+offset_bottom = 33.521626
+rotation = 0.3109843
+scale = Vector2(2.255, 2.255)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_fumiu")
+horizontal_alignment = 1

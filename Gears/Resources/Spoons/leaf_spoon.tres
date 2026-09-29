@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://qgi45f8038q7"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_8743i"]
+[ext_resource type="Texture2D" uid="uid://bje7wh64toro3" path="res://Assets/gearsAssets/Spoons/Spoony_Leaf.png" id="2_qv6sa"]
+
+[resource]
+script = ExtResource("1_8743i")
+type = 1
+price = 100
+texture = ExtResource("2_qv6sa")
+level = 1
+strenght = 0.1
+speed = 0.3
+snap = -1.0
+rarity = 0.2
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://c3gd7n1huyw7"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_4xdra"]
+[ext_resource type="Texture2D" uid="uid://bfqcekuiso7t4" path="res://Assets/gearsAssets/Shrimp.png" id="2_a3bro"]
+
+[resource]
+script = ExtResource("1_4xdra")
+type = 3
+price = 500
+texture = ExtResource("2_a3bro")
+level = 1
+strenght = 0.4
+speed = 5.0
+rarity = 0.5
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

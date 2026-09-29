@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="LevelRessource" format=3 uid="uid://cyw1biujtjc7a"]
+
+[ext_resource type="Texture2D" uid="uid://cxmygswpwl1fd" path="res://Assets/level icons/volcano_hidden.png" id="1_tk7te"]
+[ext_resource type="Script" uid="uid://d34bq8wrfn1wc" path="res://Level Select/level_ressource.gd" id="2_jfttt"]
+[ext_resource type="Texture2D" uid="uid://1liximag5a0n" path="res://Assets/level icons/volcano.png" id="3_g3gwj"]
+[ext_resource type="Texture2D" uid="uid://bduujxmevh43t" path="res://Assets/textures/Shop/animations/ShopShackVolcan2.png" id="3_po87i"]
+[ext_resource type="Texture2D" uid="uid://r7lp2xumw43t" path="res://Assets/textures/Shop/animations/ShopShackVolcan.png" id="4_psugw"]
+
+[resource]
+script = ExtResource("2_jfttt")
+texture = ExtResource("3_g3gwj")
+hidden_texture = ExtResource("1_tk7te")
+id = 2
+cost = 14
+shop_frames = Array[Texture2D]([ExtResource("3_po87i"), ExtResource("4_psugw")])
+metadata/_custom_type_script = "uid://d34bq8wrfn1wc"

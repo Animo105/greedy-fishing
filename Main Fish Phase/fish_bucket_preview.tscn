@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://clklkddocg4nd"]
+
+[ext_resource type="Texture2D" uid="uid://di0t82bfi8bx1" path="res://Assets/fish/fish_template.png" id="1_804a0"]
+[ext_resource type="Script" uid="uid://co5n1fmqcvi6g" path="res://Main Fish Phase/fish_bucket_preview.gd" id="1_b6m3j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_euhu8"]
+radius = 32.0
+
+[node name="FishBucketPreview" type="RigidBody2D" unique_id=1635415802]
+script = ExtResource("1_b6m3j")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=517608197]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_804a0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=439640518]
+shape = SubResource("CircleShape2D_euhu8")

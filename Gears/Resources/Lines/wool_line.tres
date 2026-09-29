@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://cqubdhks0x8yk"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_xotms"]
+[ext_resource type="Texture2D" uid="uid://c87eiyue3kyc2" path="res://Assets/gearsAssets/Lines/line_wool.png" id="2_swaou"]
+
+[resource]
+script = ExtResource("1_xotms")
+type = 2
+price = 150
+texture = ExtResource("2_swaou")
+snap = 0.5
+rarity = 1.0
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

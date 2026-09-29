@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://c1rp8ewctg476"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_nsym6"]
+[ext_resource type="Texture2D" uid="uid://bhu02eb5vug6" path="res://Assets/gearsAssets/Hooks/ChristmasHook2.png" id="2_nsym6"]
+
+[resource]
+script = ExtResource("1_nsym6")
+price = 600
+texture = ExtResource("2_nsym6")
+level = 1
+strenght = 0.7
+speed = -0.2
+snap = -0.4
+rarity = 2.0
+in_shop = 1
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

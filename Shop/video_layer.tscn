@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://xxvnb2poxaw"]
+
+[ext_resource type="Texture2D" uid="uid://dnlw08nae1njl" path="res://Assets/videos/video_background.png" id="1_q08q5"]
+[ext_resource type="Script" uid="uid://bijwqioxevk51" path="res://Shop/video_layer.gd" id="1_rxm36"]
+[ext_resource type="Texture2D" uid="uid://bsypmvsrrog4j" path="res://Assets/textures/strenght.png" id="3_6ha7x"]
+[ext_resource type="Texture2D" uid="uid://bynk6bx1xie2k" path="res://Assets/textures/snap.png" id="4_21sm4"]
+[ext_resource type="Texture2D" uid="uid://lpplfqrtgvp3" path="res://Assets/textures/speed.png" id="5_xtexw"]
+[ext_resource type="Texture2D" uid="uid://dk3tbrep1lli0" path="res://Assets/buttons/exit_normal.png" id="6_fo7jw"]
+[ext_resource type="Texture2D" uid="uid://duftm28avbswt" path="res://Assets/buttons/exit_pressed.png" id="7_b4vii"]
+[ext_resource type="Texture2D" uid="uid://minph8lx7i3i" path="res://Assets/buttons/exit_hover.png" id="8_asi7e"]
+[ext_resource type="Texture2D" uid="uid://dx4ktk7ecvmxk" path="res://Assets/buttons/exit_disabled.png" id="9_a41r1"]
+
+[node name="VideoLayer" type="CanvasLayer" unique_id=1327021202]
+script = ExtResource("1_rxm36")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1541837581]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=220305328]
+custom_minimum_size = Vector2(1000, 600)
+layout_mode = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CenterContainer/PanelContainer" unique_id=974513594]
+layout_mode = 2
+texture = ExtResource("1_q08q5")
+patch_margin_left = 85
+patch_margin_top = 85
+patch_margin_right = 85
+patch_margin_bottom = 85
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer" unique_id=2101110870]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="Strenght" type="TextureRect" parent="CenterContainer/PanelContainer/MarginContainer" unique_id=1394739941]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("3_6ha7x")
+expand_mode = 1
+
+[node name="Snap" type="TextureRect" parent="CenterContainer/PanelContainer/MarginContainer" unique_id=1624191646]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+texture = ExtResource("4_21sm4")
+expand_mode = 1
+
+[node name="Speed" type="TextureRect" parent="CenterContainer/PanelContainer/MarginContainer" unique_id=1750135004]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+texture = ExtResource("5_xtexw")
+expand_mode = 1
+
+[node name="Control" type="Control" parent="CenterContainer/PanelContainer" unique_id=164585871]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="CenterContainer/PanelContainer/Control" unique_id=967824951]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -127.0
+offset_bottom = 127.0
+grow_horizontal = 0
+texture_normal = ExtResource("6_fo7jw")
+texture_pressed = ExtResource("7_b4vii")
+texture_hover = ExtResource("8_asi7e")
+texture_disabled = ExtResource("9_a41r1")
+texture_focused = ExtResource("8_asi7e")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="CenterContainer/PanelContainer/Control/TextureButton" to="." method="_on_texture_button_pressed"]

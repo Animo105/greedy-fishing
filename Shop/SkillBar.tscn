@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bifsyr3rmvq52"]
+
+[ext_resource type="Texture2D" uid="uid://qfnimdp76wj2" path="res://Assets/textures/Shop/Rarity.png" id="1_ar4bp"]
+[ext_resource type="Script" uid="uid://bjqufba5fbvm5" path="res://Shop/skill_bar.gd" id="1_i58pm"]
+
+[node name="SkillBar" type="HBoxContainer" unique_id=1843761292]
+script = ExtResource("1_i58pm")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1395851696]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture = ExtResource("1_ar4bp")
+expand_mode = 1
+
+[node name="ActualValueLabel" type="Label" parent="." unique_id=594975146]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0.5647059, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 1.347661e-06, 0.90160954, 0)
+theme_override_font_sizes/font_size = 25
+text = "100"
+vertical_alignment = 1
+
+[node name="PreviewValueLabel" type="Label" parent="." unique_id=1949366330]
+visible = false
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 25
+text = "+0 (100)"
+vertical_alignment = 1

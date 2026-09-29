@@ -1,0 +1,285 @@
+[gd_scene format=3 uid="uid://c67651jp4gnm7"]
+
+[ext_resource type="Script" uid="uid://b137yplwpytd4" path="res://Main Fish Phase/main_fish_phase.gd" id="1_sb3fd"]
+[ext_resource type="Texture2D" uid="uid://bw40etruspjdf" path="res://Assets/level icons/level_selct_background.png" id="2_02ott"]
+[ext_resource type="Texture2D" uid="uid://dmf66iqxuh7ew" path="res://Assets/textures/money_sign.svg" id="2_lyorp"]
+[ext_resource type="Script" uid="uid://ckitegob0uchk" path="res://Globals/progress_container.gd" id="3_bbyx3"]
+[ext_resource type="Texture2D" uid="uid://b6yw4ia8ojgc2" path="res://Assets/textures/bar_test.png" id="3_lbgfd"]
+[ext_resource type="Texture2D" uid="uid://bu0whue464lh2" path="res://Assets/textures/soleil.png" id="3_ofyt0"]
+[ext_resource type="Texture2D" uid="uid://bigxmpmgnbgqa" path="res://Assets/textures/bucket.png" id="3_ueg10"]
+[ext_resource type="Script" uid="uid://bomkkxcy3vj4g" path="res://Main Fish Phase/catch_progress_bar.gd" id="5_lyorp"]
+[ext_resource type="PackedScene" uid="uid://bphtp80rd1oto" path="res://Main Fish Phase/fishing_bar.tscn" id="7_ofyt0"]
+[ext_resource type="Texture2D" uid="uid://db07g8ub1tgbi" path="res://Assets/buttons/left_normal.png" id="8_wywu7"]
+[ext_resource type="Script" uid="uid://cev86rrwog377" path="res://Main Fish Phase/splash_audio_sound.gd" id="11_7suml"]
+[ext_resource type="Texture2D" uid="uid://dt7balo1ragh5" path="res://Assets/buttons/right_normal.png" id="11_rwc82"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_yf5fn"]
+color = Color(1, 1, 1, 1)
+thickness = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dtnf0"]
+bg_color = Color(0.0885599, 0.08855992, 0.08855986, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ueg10"]
+bg_color = Color(0.44705883, 0.654902, 0.5568628, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_left = 10
+expand_margin_right = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lyorp"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6y7v2"]
+bg_color = Color(0.44705883, 0.654902, 0.5568628, 1)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+expand_margin_left = 3.0
+
+[node name="MainFishPhase" type="Control" unique_id=1897626187]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sb3fd")
+
+[node name="backgroundDay" type="TextureRect" parent="." unique_id=163650856]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_02ott")
+
+[node name="BackgroundNight" type="TextureRect" parent="." unique_id=1112761224]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_02ott")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1546046090]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1179687559]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="MainScreen" type="Control" parent="MarginContainer/VBoxContainer" unique_id=1015210953]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MainScreen" unique_id=1947647971]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer" unique_id=78199646]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 25
+
+[node name="Control" type="Control" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/MarginContainer" unique_id=1210880583]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/MarginContainer/Control" unique_id=1373781688]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+texture = ExtResource("3_lbgfd")
+patch_margin_left = 24
+patch_margin_right = 24
+
+[node name="ProgressContainer" type="Container" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/MarginContainer/Control/NinePatchRect" unique_id=1956447632]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_bbyx3")
+metadata/_custom_type_script = "uid://ckitegob0uchk"
+
+[node name="Sprite2D" type="TextureRect" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/MarginContainer/Control/NinePatchRect/ProgressContainer" unique_id=920197485]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+offset_transform_enabled = true
+offset_transform_position = Vector2(-128, -128)
+offset_transform_scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_ofyt0")
+
+[node name="BucketZone" type="PanelContainer" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer" unique_id=462486461]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone" unique_id=1566124324]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/MarginContainer" unique_id=548658380]
+layout_mode = 2
+
+[node name="MoneyIndicator" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/MarginContainer/VBoxContainer" unique_id=775385549]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/MarginContainer/VBoxContainer/MoneyIndicator" unique_id=566308917]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("2_lyorp")
+expand_mode = 1
+
+[node name="money_label" type="Label" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/MarginContainer/VBoxContainer/MoneyIndicator" unique_id=1666752320]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "0"
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/MarginContainer/VBoxContainer" unique_id=515804753]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxLine_yf5fn")
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/MarginContainer/VBoxContainer" unique_id=192214029]
+custom_minimum_size = Vector2(350, 400)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+
+[node name="BucketPhysic" type="Node2D" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/MarginContainer/VBoxContainer/TextureRect2" unique_id=1593353333]
+
+[node name="Bucket" type="Sprite2D" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/MarginContainer/VBoxContainer/TextureRect2/BucketPhysic" unique_id=433539008]
+texture = ExtResource("3_ueg10")
+centered = false
+
+[node name="StaticBody2D" type="StaticBody2D" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/MarginContainer/VBoxContainer/TextureRect2/BucketPhysic/Bucket" unique_id=1664466354]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/MarginContainer/VBoxContainer/TextureRect2/BucketPhysic/Bucket/StaticBody2D" unique_id=42466222]
+polygon = PackedVector2Array(0, 0, 32, 0, 32, 368, 320, 368, 320, 0, 350, 0, 350, 400, 0, 400)
+
+[node name="FishGroup" type="Node2D" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/MarginContainer/VBoxContainer/TextureRect2/BucketPhysic" unique_id=68161821]
+unique_name_in_owner = true
+position = Vector2(186, 25)
+
+[node name="FishingBar" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=117461320]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Left" type="TextureRect" parent="MarginContainer/VBoxContainer/FishingBar" unique_id=968988412]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("8_wywu7")
+expand_mode = 1
+
+[node name="FishingBarHolder" type="Control" parent="MarginContainer/VBoxContainer/FishingBar" unique_id=393215742]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FishingBar" parent="MarginContainer/VBoxContainer/FishingBar/FishingBarHolder" unique_id=1666678743 instance=ExtResource("7_ofyt0")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_top = 0.0
+anchor_bottom = 1.0
+offset_top = 0.0
+offset_bottom = 0.0
+size_flags_vertical = 1
+
+[node name="FishSprite" type="Sprite2D" parent="MarginContainer/VBoxContainer/FishingBar/FishingBarHolder/FishingBar" unique_id=410207045]
+unique_name_in_owner = true
+visible = false
+position = Vector2(414, 64)
+scale = Vector2(0.5, 0.5)
+
+[node name="CatchProgressBar" type="HBoxContainer" parent="MarginContainer/VBoxContainer/FishingBar/FishingBarHolder" unique_id=794763116]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = -25.0
+offset_bottom = -10.0
+grow_horizontal = 2
+theme_override_constants/separation = 0
+alignment = 1
+script = ExtResource("5_lyorp")
+
+[node name="ProgressBarLeft" type="ProgressBar" parent="MarginContainer/VBoxContainer/FishingBar/FishingBarHolder/CatchProgressBar" unique_id=1375290114]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_dtnf0")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ueg10")
+max_value = 1.0
+value = 0.2
+fill_mode = 1
+show_percentage = false
+
+[node name="ProgressBarRight" type="ProgressBar" parent="MarginContainer/VBoxContainer/FishingBar/FishingBarHolder/CatchProgressBar" unique_id=555104628]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_lyorp")
+theme_override_styles/fill = SubResource("StyleBoxFlat_6y7v2")
+max_value = 1.0
+value = 0.2
+show_percentage = false
+
+[node name="Right" type="TextureRect" parent="MarginContainer/VBoxContainer/FishingBar" unique_id=60413647]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+size_flags_vertical = 8
+texture = ExtResource("11_rwc82")
+expand_mode = 1
+
+[node name="Timer" type="Timer" parent="." unique_id=1191305872]
+one_shot = true
+
+[node name="Bucket Anchor" type="Control" parent="." unique_id=1951671770]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=701712670]
+script = ExtResource("11_7suml")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

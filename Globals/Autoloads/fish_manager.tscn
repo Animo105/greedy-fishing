@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bnr2flvu1w4pu"]
+
+[ext_resource type="Script" uid="uid://dq6gb58w754co" path="res://Globals/Autoloads/fish_manager.gd" id="1_d54si"]
+
+[node name="FishManager" type="Node" unique_id=1593784563]
+script = ExtResource("1_d54si")

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="GearResource" format=3 uid="uid://do3o0337y223o"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_u0nf3"]
+[ext_resource type="Texture2D" uid="uid://ci56e0203jxad" path="res://Assets/gearsAssets/Squid.png" id="2_a3gnj"]
+
+[resource]
+script = ExtResource("1_u0nf3")
+type = 3
+price = 1000
+texture = ExtResource("2_a3gnj")
+level = 2
+strenght = 5.0
+speed = 8.0
+snap = 5.0
+rarity = 2.0
+metadata/_custom_type_script = "uid://c6skkt4jmcl07"

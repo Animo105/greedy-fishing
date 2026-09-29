@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="LevelRessource" format=3 uid="uid://dqg4oxp8267in"]
+
+[ext_resource type="Texture2D" uid="uid://clmcc5p2xvvgp" path="res://Assets/level icons/IceCube _hidden.png" id="1_cwah6"]
+[ext_resource type="Script" uid="uid://d34bq8wrfn1wc" path="res://Level Select/level_ressource.gd" id="2_3tttg"]
+[ext_resource type="Texture2D" uid="uid://c3tm67fkk3aic" path="res://Assets/textures/Shop/animations/ShopShackSnow.png" id="3_01pm8"]
+[ext_resource type="Texture2D" uid="uid://cyjst6sngugs2" path="res://Assets/textures/Shop/animations/ShopShackSnow2.png" id="4_m4aow"]
+[ext_resource type="Texture2D" uid="uid://ct7dgiykmjwyk" path="res://Assets/level icons/IceCube.png" id="5_01pm8"]
+
+[resource]
+script = ExtResource("2_3tttg")
+texture = ExtResource("5_01pm8")
+hidden_texture = ExtResource("1_cwah6")
+id = 1
+cost = 5
+shop_frames = Array[Texture2D]([ExtResource("3_01pm8"), ExtResource("4_m4aow")])
+metadata/_custom_type_script = "uid://d34bq8wrfn1wc"

@@ -1,0 +1,30 @@
+[gd_resource type="Theme" format=3 uid="uid://dcks5er6tsnu3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fyvmx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0dftj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h5t51"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_10rey"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7yyeo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w53sr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f5r8q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4goj0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_crnkq"]
+
+[resource]
+ItemList/styles/cursor = SubResource("StyleBoxEmpty_fyvmx")
+ItemList/styles/cursor_unfocused = SubResource("StyleBoxEmpty_0dftj")
+ItemList/styles/focus = SubResource("StyleBoxEmpty_h5t51")
+ItemList/styles/hovered = SubResource("StyleBoxEmpty_10rey")
+ItemList/styles/hovered_selected = SubResource("StyleBoxEmpty_7yyeo")
+ItemList/styles/hovered_selected_focus = SubResource("StyleBoxEmpty_w53sr")
+ItemList/styles/panel = SubResource("StyleBoxEmpty_f5r8q")
+ItemList/styles/selected = SubResource("StyleBoxEmpty_4goj0")
+ItemList/styles/selected_focus = SubResource("StyleBoxEmpty_crnkq")
