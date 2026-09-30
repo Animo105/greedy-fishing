@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bivsqbohpm6h5" path="res://Assets/textures/fishing_bar.png" id="1_bq1mb"]
 [ext_resource type="Script" uid="uid://dcgwtwxfmt3mx" path="res://Main Fish Phase/fishing_bar.gd" id="1_f0njc"]
-[ext_resource type="Texture2D" uid="uid://bbdilm67v3ly1" path="res://Assets/textures/that_one_green_pixel.png" id="2_wt0h1"]
+[ext_resource type="Texture2D" uid="uid://dq15ko5bcywm0" path="res://Assets/UI/fishing_bar.png" id="2_wt0h1"]
 
 [node name="Bar" type="PanelContainer" unique_id=736783115]
 custom_minimum_size = Vector2(0, 75)
@@ -19,24 +19,23 @@ size_flags_vertical = 8
 offset_transform_enabled = true
 script = ExtResource("1_f0njc")
 
-[node name="Control" type="Control" parent="." unique_id=724054532]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=972140686]
 layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
 
-[node name="CenterBar" type="TextureRect" parent="Control" unique_id=384408780]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.45
-anchor_right = 0.55
-anchor_bottom = 1.0
-offset_left = 1.0
-offset_top = 0.5
-offset_right = 1.0
-offset_bottom = -0.55999756
-grow_horizontal = 2
-grow_vertical = 2
+[node name="CenterBar" type="NinePatchRect" parent="MarginContainer" unique_id=1618345327]
+layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("2_wt0h1")
-expand_mode = 1
+patch_margin_left = 16
+patch_margin_top = 15
+patch_margin_right = 16
+patch_margin_bottom = 15
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=690916385]
 layout_mode = 2

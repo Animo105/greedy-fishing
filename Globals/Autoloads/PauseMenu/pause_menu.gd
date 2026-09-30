@@ -6,8 +6,10 @@ var tween : Tween
 
 func _ready() -> void:
 	visible = false
+	process_mode = Node.PROCESS_MODE_ALWAYS
 
 func open():
+	get_tree().paused = true
 	menu_container.offset_transform_position = Vector2(0, get_window().size.y)
 	visible = true
 	if tween:
@@ -23,9 +25,10 @@ func close():
 	tween.tween_property(menu_container, "offset_transform_position", Vector2(0, get_window().size.y), 0.2)
 	await tween.finished
 	visible = false
+	get_tree().paused = false
 
 func _on_resume_pressed() -> void:
-	pass # Replace with function body.
+	close()
 
 
 func _on_options_pressed() -> void:
