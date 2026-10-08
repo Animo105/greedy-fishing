@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://qfnimdp76wj2" path="res://Assets/textures/Shop/Rarity.png" id="1_ar4bp"]
 [ext_resource type="Script" uid="uid://bjqufba5fbvm5" path="res://Shop/skill_bar.gd" id="1_i58pm"]
 
-[node name="SkillBar" type="HBoxContainer" unique_id=1843761292]
+[node name="SkillStat" type="HBoxContainer" unique_id=1843761292]
 script = ExtResource("1_i58pm")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1395851696]

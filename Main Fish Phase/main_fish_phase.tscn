@@ -2,14 +2,13 @@
 
 [ext_resource type="Script" uid="uid://b137yplwpytd4" path="res://Main Fish Phase/main_fish_phase.gd" id="1_sb3fd"]
 [ext_resource type="Texture2D" uid="uid://bw40etruspjdf" path="res://Assets/level icons/level_selct_background.png" id="2_02ott"]
-[ext_resource type="Texture2D" uid="uid://dmf66iqxuh7ew" path="res://Assets/textures/money_sign.svg" id="2_lyorp"]
 [ext_resource type="Script" uid="uid://ckitegob0uchk" path="res://Globals/progress_container.gd" id="3_bbyx3"]
 [ext_resource type="Texture2D" uid="uid://b6yw4ia8ojgc2" path="res://Assets/textures/bar_test.png" id="3_lbgfd"]
 [ext_resource type="Script" uid="uid://bomkkxcy3vj4g" path="res://Main Fish Phase/catch_progress_bar.gd" id="5_lyorp"]
 [ext_resource type="Texture2D" uid="uid://b10vlhyybc5gk" path="res://Assets/textures/Sun.png" id="5_wywu7"]
 [ext_resource type="Script" uid="uid://cw6iacf6dsbos" path="res://Main Fish Phase/sprite_2d.gd" id="6_rwc82"]
 [ext_resource type="Texture2D" uid="uid://2hgdkeh431je" path="res://Assets/textures/moon.png" id="7_1tb1g"]
-[ext_resource type="PackedScene" uid="uid://bphtp80rd1oto" path="res://Main Fish Phase/fishing_bar.tscn" id="7_ofyt0"]
+[ext_resource type="PackedScene" uid="uid://bphtp80rd1oto" path="res://Main Fish Phase/FishingBar/fishing_bar.tscn" id="7_ofyt0"]
 [ext_resource type="FontFile" uid="uid://bt5jw78ub44tu" path="res://Assets/Comic Sans MS.ttf" id="7_rwc82"]
 [ext_resource type="Texture2D" uid="uid://b76bco0cjs4o1" path="res://Assets/textures/bucket.png" id="7_wywu7"]
 [ext_resource type="Texture2D" uid="uid://cyqj0oboq40ty" path="res://Assets/textures/Button_up.png" id="9_wywu7"]
@@ -188,16 +187,6 @@ theme_override_font_sizes/font_size = 37
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/MainScreen/HBoxContainer/BucketZone/BucketPhysic" unique_id=566308917]
-modulate = Color(0, 0, 0, 1)
-custom_minimum_size = Vector2(32, 32)
-offset_left = 266.0
-offset_top = 361.0
-offset_right = 298.0
-offset_bottom = 393.0
-texture = ExtResource("2_lyorp")
-expand_mode = 1
 
 [node name="FishingBar" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=117461320]
 layout_mode = 2

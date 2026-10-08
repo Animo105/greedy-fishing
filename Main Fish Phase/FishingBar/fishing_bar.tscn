@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bphtp80rd1oto"]
 
-[ext_resource type="Texture2D" uid="uid://bivsqbohpm6h5" path="res://Assets/textures/fishing_bar.png" id="1_bq1mb"]
-[ext_resource type="Script" uid="uid://dcgwtwxfmt3mx" path="res://Main Fish Phase/fishing_bar.gd" id="1_f0njc"]
-[ext_resource type="Texture2D" uid="uid://dq15ko5bcywm0" path="res://Assets/UI/fishing_bar.png" id="2_wt0h1"]
+[ext_resource type="Script" uid="uid://dcgwtwxfmt3mx" path="res://Main Fish Phase/FishingBar/fishing_bar.gd" id="1_lwbkv"]
+[ext_resource type="Texture2D" uid="uid://dq15ko5bcywm0" path="res://Assets/UI/fishing_bar.png" id="2_leqbg"]
+[ext_resource type="Texture2D" uid="uid://bivsqbohpm6h5" path="res://Assets/textures/fishing_bar.png" id="3_f6jn6"]
 
 [node name="Bar" type="PanelContainer" unique_id=736783115]
-custom_minimum_size = Vector2(0, 75)
+custom_minimum_size = Vector2(0, 128)
 anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
@@ -17,7 +17,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 8
 offset_transform_enabled = true
-script = ExtResource("1_f0njc")
+script = ExtResource("1_lwbkv")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=972140686]
 layout_mode = 2
@@ -26,10 +26,22 @@ theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 15
 theme_override_constants/margin_bottom = 15
 
-[node name="CenterBar" type="NinePatchRect" parent="MarginContainer" unique_id=1618345327]
+[node name="BarContainer" type="Control" parent="MarginContainer" unique_id=1993383658]
 layout_mode = 2
+
+[node name="CatchZone" type="NinePatchRect" parent="MarginContainer/BarContainer" unique_id=595750494]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_right = 16.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 4
-texture = ExtResource("2_wt0h1")
+texture = ExtResource("2_leqbg")
 patch_margin_left = 16
 patch_margin_top = 15
 patch_margin_right = 16
@@ -39,7 +51,7 @@ axis_stretch_vertical = 1
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=690916385]
 layout_mode = 2
-texture = ExtResource("1_bq1mb")
+texture = ExtResource("3_f6jn6")
 patch_margin_left = 32
 patch_margin_top = 32
 patch_margin_right = 32

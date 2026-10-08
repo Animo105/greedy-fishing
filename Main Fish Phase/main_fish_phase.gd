@@ -40,7 +40,7 @@ var night_tween : Tween
 
 var bait_timer_s : float = 0
 
-var fish_getting_caught : Array[FishingFish] = []
+var fish_getting_caught : Array[FishOnBar] = []
 var max_fishing_fish : int = 1
 
 func _ready() -> void:
@@ -104,18 +104,15 @@ func try_catch_fish(delta : float):
 	bait_timer_s -= delta
 
 func new_fish(fish : FishResource):
-	var new_fishing_fish : FishingFish = FishingFish.new(fishing_bar, fish)
-	fish_getting_caught.append(new_fishing_fish)
-	new_fishing_fish.catched.connect(catch.bind(new_fishing_fish))
-	new_fishing_fish.fled.connect(snaped.bind(new_fishing_fish))
-	fishing_bar.add_child(new_fishing_fish)
-	new_fishing_fish.global_position = fishing_bar.absolute_center_position
-	
+	var new_fish_on_bar = fishing_bar.add_fish(fish)
+	fish_getting_caught.append(new_fish_on_bar)
+	new_fish_on_bar.catched.connect(catch.bind(new_fish_on_bar))
+	new_fish_on_bar.fled.connect(snaped.bind(new_fish_on_bar))
 
-func catch(fishing_fish : FishingFish):
+func catch(fishing_fish : FishOnBar):
+	var fish : FishResource = fishing_fish.current_fish
 	fish_getting_caught.erase(fishing_fish)
 	fishing_fish.queue_free()
-	var fish : FishResource = fishing_fish.current_fish
 	if fish.rarity < 2:
 		SfxManager.play("fishget_normal" , 5.0, randf_range(0.75, 1.25))
 	elif fish.rarity < 3:
@@ -148,9 +145,6 @@ func set_to_night():
 	night_tween.tween_property(sun, "self_modulate", Color(1,1,1,0), 1.5).set_delay(1.5)
 	night_tween.tween_property(moon, "self_modulate", Color(1,1,1,1), 1.5).set_delay(2.5)
 	night_tween.tween_property(background_day, "self_modulate", Color(1,1,1,0), 5)
-	
-	
-
 
 func update_day_timer():
 	var progress : float = 1 - (timer.time_left/Globals.DAY_DURATION)
@@ -159,7 +153,7 @@ func update_day_timer():
 		if progress >= 0.5:
 			set_to_night()
 			
-func snaped(fishing_fish : FishingFish):
+func snaped(fishing_fish : FishOnBar):
 	fish_getting_caught.erase(fishing_fish)
 	fishing_fish.queue_free()
 	SfxManager.play("fishfail")

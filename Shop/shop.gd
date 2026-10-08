@@ -166,10 +166,6 @@ func buy_and_set(gear : GearResource) -> bool:
 
 func set_actives_slots():
 	Globals.rod.calculate_stats()
-	strength.actual_value = Globals.rod.pull_strenght
-	speed.actual_value = Globals.rod.catch_speed
-	snap.actual_value = Globals.rod.snap_resistence
-	rarity.actual_value = Globals.rod.rarity
 	
 
 func _on_next_button_pressed() -> void:

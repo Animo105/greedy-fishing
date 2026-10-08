@@ -1,9 +1,18 @@
 extends RefCounted
 class_name Rod
 
-var pull_strenght : float = 0
+enum CatchZoneBehavior {
+	HEAVY,
+	LIGHT,
+	SPEEDY,
+}
+
+## DEPRICATED
+var pull_strenght : float = 0.0
+
+var catch_zone_speed : float = 0.1
 var snap_resistence : float = 0
-var bar_size_bonus : int = 0
+var catch_zone_size : float = 0.1
 var catch_speed : float = 0
 var rarity : float = 0
 
@@ -15,9 +24,9 @@ var hook_gear : GearResource = null
 var bait_type : FishResource.Bait = FishResource.Bait.ANY
 
 func calculate_stats():
-	pull_strenght = 0
+	catch_zone_speed = 0.1
 	snap_resistence = 0
-	bar_size_bonus = 0
+	catch_zone_size = 0.1
 	catch_speed = 0
 	rarity = 0
 	bait_type = FishResource.Bait.ANY
@@ -48,7 +57,7 @@ func swap_gear(gear : GearResource):
 			hook_gear = gear
 
 func _append_gear(gear : GearResource):
-	pull_strenght += gear.strenght
+	catch_zone_speed += gear.strenght
 	snap_resistence += gear.snap
 	catch_speed += gear.speed
 	rarity += gear.rarity
