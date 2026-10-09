@@ -10,7 +10,7 @@ enum CatchZoneBehavior {
 ## DEPRICATED
 var pull_strenght : float = 0.0
 
-var catch_zone_speed : float = 0.1
+var catch_zone_speed : float = 0.05
 var snap_resistence : float = 0
 var catch_zone_size : float = 0.1
 var catch_speed : float = 0

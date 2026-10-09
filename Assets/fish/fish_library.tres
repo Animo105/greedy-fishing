@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="FishLibrary" format=3 uid="uid://y1tn4hksvcmb"]
+
+[ext_resource type="Script" uid="uid://bb6mc2xy1t4uq" path="res://Fish/fish.gd" id="1_6j7nh"]
+[ext_resource type="Script" uid="uid://btpxqqb5lovup" path="res://Libraries/fish_library.gd" id="2_sj0km"]
+[ext_resource type="Resource" uid="uid://cpp0c1ek8nky4" path="res://Fish/Resources/Frozen/fake_fish.tres" id="2_wnkjk"]
+[ext_resource type="Resource" uid="uid://10lhgs3mksey" path="res://Fish/Resources/Frozen/feet_fish.tres" id="3_xfpaw"]
+[ext_resource type="Resource" uid="uid://cnwvjh65k1kxd" path="res://Fish/Resources/Frozen/ice_fish.tres" id="4_wmd8y"]
+[ext_resource type="Resource" uid="uid://b77skgjknmyt5" path="res://Fish/Resources/Frozen/parrot_fish.tres" id="5_cye7y"]
+[ext_resource type="Resource" uid="uid://d35yrx7h10vkv" path="res://Fish/Resources/Frozen/pixel_fish.tres" id="6_uqiop"]
+[ext_resource type="Resource" uid="uid://dfbq5b8hl5c7t" path="res://Fish/Resources/Frozen/puffer_fish.tres" id="7_h6pia"]
+[ext_resource type="Resource" uid="uid://ddbw45tt0pp35" path="res://Fish/Resources/Frozen/yellow_fish.tres" id="8_88fvs"]
+[ext_resource type="Resource" uid="uid://b7midsxj1c2rx" path="res://Fish/Resources/Swamp/eel_fish.tres" id="9_rwyo1"]
+[ext_resource type="Resource" uid="uid://b3d5hgdp64yqe" path="res://Fish/Resources/Swamp/ghost_fish.tres" id="10_6f5o4"]
+[ext_resource type="Resource" uid="uid://dvfkuk3648ewe" path="res://Fish/Resources/Swamp/gray_fish.tres" id="11_xscmw"]
+[ext_resource type="Resource" uid="uid://bpndigkny04yy" path="res://Fish/Resources/Swamp/green_fish.tres" id="12_qaqy5"]
+[ext_resource type="Resource" uid="uid://bgmrrpun3dbqa" path="res://Fish/Resources/Swamp/pink_fish.tres" id="13_g2aro"]
+[ext_resource type="Resource" uid="uid://6wkaea1omc6c" path="res://Fish/Resources/Swamp/purple_fish.tres" id="14_3hw2o"]
+[ext_resource type="Resource" uid="uid://n6pirmsanyfa" path="res://Fish/Resources/Swamp/rock_fish.tres" id="15_x7s43"]
+[ext_resource type="Resource" uid="uid://yamrpwxnqgcd" path="res://Fish/Resources/Volcano/fighter_fish.tres" id="16_30uo1"]
+[ext_resource type="Resource" uid="uid://s257mp1im67y" path="res://Fish/Resources/Volcano/fire_fish.tres" id="17_cgy6r"]
+[ext_resource type="Resource" uid="uid://bddctd2v0cbs4" path="res://Fish/Resources/Volcano/hermit_fish.tres" id="18_ulnwb"]
+[ext_resource type="Resource" uid="uid://5plqmoxyeodt" path="res://Fish/Resources/Volcano/red_fish.tres" id="19_6c45u"]
+[ext_resource type="Resource" uid="uid://d0g88r6xq2pam" path="res://Fish/Resources/Volcano/small_fish.tres" id="20_rwtx7"]
+
+[resource]
+script = ExtResource("2_sj0km")
+fish = Array[ExtResource("1_6j7nh")]([ExtResource("2_wnkjk"), ExtResource("3_xfpaw"), ExtResource("4_wmd8y"), ExtResource("5_cye7y"), ExtResource("6_uqiop"), ExtResource("7_h6pia"), ExtResource("8_88fvs"), ExtResource("9_rwyo1"), ExtResource("10_6f5o4"), ExtResource("11_xscmw"), ExtResource("12_qaqy5"), ExtResource("13_g2aro"), ExtResource("14_3hw2o"), ExtResource("15_x7s43"), ExtResource("16_30uo1"), ExtResource("17_cgy6r"), ExtResource("18_ulnwb"), ExtResource("19_6c45u"), ExtResource("20_rwtx7")])
+metadata/_custom_type_script = "uid://btpxqqb5lovup"

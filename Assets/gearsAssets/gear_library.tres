@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="GearLibrary" format=3 uid="uid://dq5x6reqh1w55"]
+
+[ext_resource type="Script" uid="uid://c6skkt4jmcl07" path="res://Gears/gear.gd" id="1_e1kil"]
+[ext_resource type="Resource" uid="uid://bvjviu2cpm7ag" path="res://Gears/Resources/Baits/bait1.tres" id="2_6eiao"]
+[ext_resource type="Script" uid="uid://bdy7clet5qip7" path="res://Libraries/gear_library.gd" id="2_c5vxi"]
+[ext_resource type="Resource" uid="uid://c3gd7n1huyw7" path="res://Gears/Resources/Baits/bait2.tres" id="3_apkhv"]
+[ext_resource type="Resource" uid="uid://do3o0337y223o" path="res://Gears/Resources/Baits/bait3.tres" id="4_apary"]
+[ext_resource type="Resource" uid="uid://b8tjya7jsnhcu" path="res://Gears/Resources/Hooks/basic_hook_1.tres" id="5_w325k"]
+[ext_resource type="Resource" uid="uid://dic1dx0wevjse" path="res://Gears/Resources/Hooks/basic_hook_2.tres" id="6_ta7oe"]
+[ext_resource type="Resource" uid="uid://ctdvfj8l0ue5v" path="res://Gears/Resources/Hooks/christmas_hook_1.tres" id="7_clu12"]
+[ext_resource type="Resource" uid="uid://c1rp8ewctg476" path="res://Gears/Resources/Hooks/christmas_hook_2.tres" id="8_taptu"]
+[ext_resource type="Resource" uid="uid://dhn2cb2nak6nf" path="res://Gears/Resources/Hooks/christmas_hook_3.tres" id="9_tqlm2"]
+[ext_resource type="Resource" uid="uid://cfakql2phlbgh" path="res://Gears/Resources/Hooks/cobalt_hook_2.tres" id="10_ku3k4"]
+[ext_resource type="Resource" uid="uid://bao572tjn602h" path="res://Gears/Resources/Hooks/cobalt_hook_3.tres" id="11_rb143"]
+[ext_resource type="Resource" uid="uid://t8fe7l156pek" path="res://Gears/Resources/Hooks/demonic_hook_2.tres" id="12_yelio"]
+[ext_resource type="Resource" uid="uid://ckhbd122au2db" path="res://Gears/Resources/Hooks/demonic_hook_3.tres" id="13_muwgi"]
+[ext_resource type="Resource" uid="uid://cytiav00vw73e" path="res://Gears/Resources/Hooks/plant_hook_1.tres" id="14_cavx0"]
+[ext_resource type="Resource" uid="uid://oip8sql2ihhh" path="res://Gears/Resources/Hooks/plant_hook_2.tres" id="15_7f3k4"]
+[ext_resource type="Resource" uid="uid://bsjh2ykbamaia" path="res://Gears/Resources/Hooks/plant_hook_3.tres" id="16_r8d72"]
+[ext_resource type="Resource" uid="uid://b0yil2vt23kut" path="res://Gears/Resources/Lines/cobalt_line.tres" id="17_7ujhf"]
+[ext_resource type="Resource" uid="uid://2l6w6q8p5chr" path="res://Gears/Resources/Lines/demonic_line.tres" id="18_kg6q5"]
+[ext_resource type="Resource" uid="uid://bxjn4d7g8fhua" path="res://Gears/Resources/Lines/festive_line.tres" id="19_prlec"]
+[ext_resource type="Resource" uid="uid://n81bf8i2wusm" path="res://Gears/Resources/Lines/hdmi_line.tres" id="20_q4fak"]
+[ext_resource type="Resource" uid="uid://yr10tha2h6le" path="res://Gears/Resources/Lines/rope_line.tres" id="21_a5vrf"]
+[ext_resource type="Resource" uid="uid://b3fvipd56tt20" path="res://Gears/Resources/Lines/web_line.tres" id="22_4m4bh"]
+[ext_resource type="Resource" uid="uid://bg0jc0v8jl0gf" path="res://Gears/Resources/Lines/whip_line.tres" id="23_t0fbw"]
+[ext_resource type="Resource" uid="uid://cqubdhks0x8yk" path="res://Gears/Resources/Lines/wool_line.tres" id="24_qultx"]
+[ext_resource type="Resource" uid="uid://b2gx2un86eys2" path="res://Gears/Resources/Spoons/basic_spoon.tres" id="26_h0rug"]
+[ext_resource type="Resource" uid="uid://c2he8d2k7u27i" path="res://Gears/Resources/Spoons/cobalt_spoon.tres" id="27_5icer"]
+[ext_resource type="Resource" uid="uid://bnutvugy8tyg5" path="res://Gears/Resources/Spoons/demonic_spoon.tres" id="28_7s8f5"]
+[ext_resource type="Resource" uid="uid://caxdma2wnrk78" path="res://Gears/Resources/Spoons/disco_spoon.tres" id="29_n432w"]
+[ext_resource type="Resource" uid="uid://osmsenc3oanf" path="res://Gears/Resources/Spoons/ginger_spoon.tres" id="30_mfv5j"]
+[ext_resource type="Resource" uid="uid://b4tmymav81b7t" path="res://Gears/Resources/Spoons/golden_spoon.tres" id="31_arqn6"]
+[ext_resource type="Resource" uid="uid://qgi45f8038q7" path="res://Gears/Resources/Spoons/leaf_spoon.tres" id="32_s8gu1"]
+
+[resource]
+script = ExtResource("2_c5vxi")
+baits = Array[ExtResource("1_e1kil")]([ExtResource("2_6eiao"), ExtResource("3_apkhv"), ExtResource("4_apary")])
+lines = Array[ExtResource("1_e1kil")]([ExtResource("17_7ujhf"), ExtResource("18_kg6q5"), ExtResource("19_prlec"), ExtResource("20_q4fak"), ExtResource("21_a5vrf"), ExtResource("22_4m4bh"), ExtResource("23_t0fbw"), ExtResource("24_qultx")])
+hooks = Array[ExtResource("1_e1kil")]([ExtResource("5_w325k"), ExtResource("6_ta7oe"), ExtResource("7_clu12"), ExtResource("8_taptu"), ExtResource("9_tqlm2"), ExtResource("10_ku3k4"), ExtResource("11_rb143"), ExtResource("12_yelio"), ExtResource("13_muwgi"), ExtResource("14_cavx0"), ExtResource("15_7f3k4"), ExtResource("16_r8d72")])
+spoons = Array[ExtResource("1_e1kil")]([ExtResource("26_h0rug"), ExtResource("27_5icer"), ExtResource("28_7s8f5"), ExtResource("29_n432w"), ExtResource("30_mfv5j"), ExtResource("31_arqn6"), ExtResource("32_s8gu1")])
+metadata/_custom_type_script = "uid://bdy7clet5qip7"

@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://oq7y652u3jow"]
-
-[ext_resource type="Script" uid="uid://y0ol1txdnsck" path="res://Globals/Autoloads/gear_manager.gd" id="1_sl4wk"]
-
-[node name="GearManager" type="Node" unique_id=328644115]
-script = ExtResource("1_sl4wk")

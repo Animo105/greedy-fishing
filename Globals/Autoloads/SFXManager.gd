@@ -10,10 +10,11 @@ var players: Array[AudioStreamPlayer] = []
 func _ready() -> void:
 	for i in POOL_SIZE:
 		var player := AudioStreamPlayer.new()
+		player.bus = "SFX"
 		add_child(player)
 		players.append(player)
-	return
 	for file in DirAccess.get_files_at(SFX_PATH):
+		continue
 		if ResourceLoader.exists(SFX_PATH + file):
 			var res = load(SFX_PATH + file)
 			if res is AudioStream:

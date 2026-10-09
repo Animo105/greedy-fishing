@@ -101,7 +101,7 @@ func _on_unlock_button_pressed() -> void:
 func display_fishes() -> void:
 	for child in fish_display.get_children():
 		fish_display.remove_child(child)
-	for x : FishResource in FishManager.fish_list.values():
+	for x : FishResource in FishManager.FISH_LIBRARY.fish:
 		if x.habitat == Globals.current_habitat:
 			var fish_display_texture : TextureRect = TextureRect.new()
 			fish_display_texture.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
